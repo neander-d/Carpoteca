@@ -143,7 +143,6 @@ const seedsDatabase = [
     familia: "Lecythidaceae",
     dataColeta: "23/07/2024",
     local: "Tucuruí",
-    categoria: "Multipropósito",
     utilidades: {
       alimentacao: "sementes oleaginosas, comestíveis (semelhantes à castanha).",
       madeira: "dura e resistente, usada em construções e móveis.",
@@ -188,7 +187,6 @@ const seedsDatabase = [
     familia: "Rhamnaceae",
     dataColeta: "23/07/2024",
     local: "Tucuruí – PA",
-    categoria: "Multipropósito",
     utilidades: {
       medicinal: "flavonoides com ação anti-inflamatória e antioxidante.",
       apicola: "atrativa para abelhas (produção de mel).",
