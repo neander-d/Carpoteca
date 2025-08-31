@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Sementes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="title">Catálogo de Sementes</h1>
+            <p class="subtitle">Descubra o mundo das sementes e suas propriedades</p>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="search-section">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Buscar por nome, categoria ou propriedades..."
+                        class="search-input">
+                    <button class="search-btn" onclick="searchSeeds()">🔍</button>
+                </div>
+
+                <div class="filter-container">
+                    <select id="familyFilter" class="category-filter" onchange="filterByFamily()">
+                        <option value="">Todas as famílias</option>
+                        <option value="Sapotaceae">Sapotaceae</option>
+                        <option value="Fabaceae">Fabaceae</option>
+                        <option value="Arecaceae">Arecaceae</option>
+                        <option value="Lecythidaceae">Lecythidaceae</option>
+                        <option value="Bignoniaceae">Bignoniaceae</option>
+                        <option value="Lamiaceae">Lamiaceae</option>
+                        <option value="Rhamnaceae">Rhamnaceae</option>
+                        <option value="Euphorbiaceae">Euphorbiaceae</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="results-info">
+                <span id="resultsCount">0 sementes encontradas</span>
+            </div>
+
+            <div class="seeds-grid" id="seedsGrid">
+                <!-- Seeds will be populated by JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal for seed details -->
+    <div class="modal" id="seedModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
