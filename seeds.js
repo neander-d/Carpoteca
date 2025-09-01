@@ -33,7 +33,7 @@ const seedsDatabase = [
     {
         id: 3,
         nomeVulgar: "Tento-vermelho",
-        nomeCientifico: "Campsiandra laurifolia",
+        nomeCientifico: "Adenanthera pavonina",
         familia: "Fabaceae",
         dataColeta: "23/07/2024",
         local: "Tucuruí",
@@ -48,7 +48,7 @@ const seedsDatabase = [
     {
         id: 4,
         nomeVulgar: "Mututi",
-        nomeCientifico: "Peltogyne paniculata",
+        nomeCientifico: "Pternocarpus amazonicus",
         familia: "Fabaceae",
         dataColeta: "23/07/2024",
         local: "Tucuruí",
@@ -348,7 +348,7 @@ const seedsDatabase = [
     {
         id: 24,
         nomeVulgar: "Ipê branco",
-        nomeCientifico: "Handroanthus roseoalbus",
+        nomeCientifico: "Tabebuia roseo-alba",
         familia: "Bignoniaceae",
         dataColeta: "23/07/2024",
         local: "Tucuruí",
@@ -364,7 +364,7 @@ const seedsDatabase = [
     {
         id: 25,
         nomeVulgar: "Cedro",
-        nomeCientifico: "Cedrela odorata",
+        nomeCientifico: "Cedrela fissilis",
         familia: "Meliaceae",
         dataColeta: "23/07/2024",
         local: "Tucuruí",
@@ -380,7 +380,7 @@ const seedsDatabase = [
     {
         id: 26,
         nomeVulgar: "Bacuripiri",
-        nomeCientifico: "Rheedia gardneriana",
+        nomeCientifico: "Platonia insigs",
         familia: "Clusiaceae",
         dataColeta: "",
         local: "",
