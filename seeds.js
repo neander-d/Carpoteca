@@ -302,7 +302,7 @@ const seedsDatabase = [
     {
         id: 21,
         nomeVulgar: "Arapari-do-brejo",
-        nomeCientifico: "Ormosia paraensis",
+        nomeCientifico: "Macrolobium acaciifolium",
         familia: "Fabaceae",
         dataColeta: "23/07/2024",
         local: "Tucuruí",
