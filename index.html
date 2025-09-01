@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <title>Catálogo de Sementes</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -21,13 +22,12 @@
         <div class="container">
             <div class="search-section">
                 <div class="search-container">
-                    <input type="text" id="searchInput" placeholder="Buscar por nome, categoria ou propriedades..."
-                        class="search-input">
+                    <input type="text" id="searchInput" placeholder="Buscar sementes..." class="search-input">
                     <button class="search-btn" onclick="searchSeeds()">🔍</button>
                 </div>
 
                 <div class="filter-container">
-                    <select id="familyFilter" class="category-filter" onchange="filterByFamily()">
+                    <select id="familyFilter" class="category-filter">
                         <option value="">Todas as famílias</option>
                         <option value="Sapotaceae">Sapotaceae</option>
                         <option value="Fabaceae">Fabaceae</option>
@@ -37,6 +37,11 @@
                         <option value="Lamiaceae">Lamiaceae</option>
                         <option value="Rhamnaceae">Rhamnaceae</option>
                         <option value="Euphorbiaceae">Euphorbiaceae</option>
+                        <option value="Meliaceae">Meliaceae</option>
+                        <option value="Humiriaceae">Humiriaceae</option>
+                        <option value="Myrtaceae">Myrtaceae</option>
+                        <option value="Burseraceae">Burseraceae</option>
+                        <option value="Clusiaceae">Clusiaceae</option>
                     </select>
                 </div>
 
@@ -61,7 +66,15 @@
             </div>
         </div>
     </div>
-
+    <footer class="footer">
+        <div class="container">
+            <p>
+                &copy; 2025 Equipe Carpoteca Online: Elisa Araújo, Sara Cardoso, Bianca Costa, Adrison Ruy, Bruno
+                Ferreira <br>
+                Todos os direitos reservados.<br>
+        </div>
+    </footer>
+    <script src="seeds.js"></script>
     <script src="script.js"></script>
 </body>
 

@@ -1,233 +1,3 @@
-// Banco de dados das sementes
-const seedsDatabase = [
-  {
-    id: 1,
-    nomeVulgar: "Abiu",
-    nomeCientifico: "Pouteria caimito",
-    familia: "Sapotaceae",
-    dataColeta: "24/08/2025",
-    local: "Jundiaí",
-    utilidades: {
-      alimentacao: "fruto de polpa doce, consumido in natura ou em sucos e sorvetes.",
-      nutricional: "rico em vitaminas e minerais, fonte de energia.",
-      "medicinal popular": "usado contra anemia, tosse e problemas respiratórios.",
-      economico: "cultivado em pomares e quintais para consumo e venda.",
-    },
-    image: "images/abiu.jpg",
-  },
-  {
-    id: 2,
-    nomeVulgar: "Fava-arara",
-    nomeCientifico: "Dipteryx odorata",
-    familia: "Fabaceae",
-    dataColeta: "23/07/2024",
-    local: "Tucuruí",
-    utilidades: {
-      Aromatizante: "semente rica em cumarina, usada na perfumaria.",
-      Medicinal: "tradicionalmente empregada contra tosses, gripes e bronquites.",
-      Madeira: "muito densa e durável, usada em construções e móveis.",
-      "Uso Cultural": "sementes utilizadas em artesanato e rituais tradicionais",
-    },
-    image: "images/fava_arara.jpg",
-  },
-  {
-    id: 3,
-    nomeVulgar: "Tento-vermelho",
-    nomeCientifico: "Campsiandra laurifolia",
-    familia: "Fabaceae",
-    dataColeta: "23/07/2024",
-    local: "Tucuruí",
-    utilidades: {
-      Artesanato: "sementes vermelhas usadas em biojoias e enfeites.",
-      Ornamental: "muito apreciado pela beleza e brilho das sementes.",
-      Ecológico: "espécie nativa importante na recomposição florestal.",
-    },
-    image: "images/tento-vermelho.jpg",
-    observacao: "semente tóxica, não comestível."
-  },
-  {
-    id: 4,
-    nomeVulgar: "Mututi",
-    nomeCientifico: "Peltogyne paniculata",
-    familia: "Fabaceae",
-    dataColeta: "23/07/2024",
-    local: "Tucuruí",
-    utilidades: {
-      madeira: "madeira nobre, utilizada em pisos, móveis de luxo e construção civil.",
-      ornamental: "madeira de cor roxa intensa, muito valorizada no design.",
-      resistencia: "madeira pesada e durável, indicada para obras externas.",
-      ecologico: "importante na recuperação de áreas degradadas.",
-    },
-    image: "images/mututi.jpg",
-  },
-  {
-    id: 5,
-    nomeVulgar: "Buriti",
-    nomeCientifico: "Mauritia flexuosa",
-    familia: "Arecaceae",
-    dataColeta: "24/08/2025",
-    local: "Santa Izabel-PA",
-    utilidades: {
-      alimentacao: "polpa usada em sucos, doces, sorvetes e vinho.",
-      cosmetico: "óleo do fruto rico em vitamina A e carotenoides.",
-      artesanal: "folhas e talos usados na confecção de peças artesanais (miriti).",
-      ambiental: "espécie chave em áreas alagadas, ajuda na manutenção da fauna.",
-    },
-    image: "images/buriti.jpg",
-  },
-  {
-    id: 6,
-    nomeVulgar: "Castanha-do-Pará",
-    nomeCientifico: "Bertholletia excelsa",
-    familia: "Lecythidaceae",
-    dataColeta: "24/08/2025",
-    local: "Santa Izabel do Pará",
-    utilidades: {
-      alimentacao: "amêndoa comestível, rica em óleos e selênio.",
-      cosmetico: "óleo utilizado na indústria de cosméticos e fármacos.",
-      ecologico: "alimento essencial para a fauna amazônica (cutias, araras).",
-      economico: "produto extrativista de grande importância na Amazônia.",
-    },
-    image: "images/castanha-para.jpg",
-  },
-  {
-    id: 7,
-    nomeVulgar: "Jutaí-café (Jatobá)",
-    nomeCientifico: "Hymenaea courbaril",
-    familia: "Fabaceae",
-    dataColeta: "23/07/2024",
-    local: "Tucuruí",
-    utilidades: {
-      alimentacao: "polpa farinácea adocicada, nutritiva.",
-      madeira: "extremamente dura e resistente, usada em construções pesadas e pisos.",
-      medicinal: "partes da planta utilizadas tradicionalmente contra problemas respiratórios e inflamações.",
-      economico: "fruto aproveitado na culinária regional (farinha, bebidas).",
-      ecologico: "importante para a fauna, frutos consumidos por animais.",
-    },
-    image: "images/jatoba.jpg",
-  },
-  {
-    id: 8,
-    nomeVulgar: "Tachi-branco",
-    nomeCientifico: "Tachigali alba",
-    familia: "Fabaceae",
-    dataColeta: "23/07/2024",
-    local: "Tucuruí",
-    utilidades: {
-      madeira: "leve, usada em construção temporária, caixotaria e movelaria simples.",
-      ambiental: "espécie pioneira, útil em reflorestamentos.",
-      ecologico: "sementes aladas dispersas pelo vento auxiliam na regeneração natural.",
-      ornamental: "porte elegante, presença em projetos paisagísticos.",
-    },
-    image: "images/tachi-branco.jpg",
-  },
-  {
-    id: 9,
-    nomeVulgar: "Ipê-rosa",
-    nomeCientifico: "Handroanthus impetiginosus",
-    familia: "Bignoniaceae",
-    dataColeta: "23/07/2024",
-    local: "Tucuruí",
-    utilidades: {
-      madeira: "muito resistente, usada em construção pesada e mobiliário.",
-      ornamental: "árvore de floração exuberante, bastante cultivada em praças e avenidas.",
-      "medicinal popular": "casca usada em chás (pau-d’arco) para fins anti-inflamatórios e imunoestimulantes.",
-      ecologico: "flores atraem polinizadores, especialmente abelhas.",
-    },
-    image: "images/ipe-rosa.jpg",
-  },
-  {
-    id: 10,
-    nomeVulgar: "Sapucaia",
-    nomeCientifico: "Lecythis pisonis",
-    familia: "Lecythidaceae",
-    dataColeta: "23/07/2024",
-    local: "Tucuruí",
-    utilidades: {
-      alimentacao: "sementes oleaginosas, comestíveis (semelhantes à castanha).",
-      madeira: "dura e resistente, usada em construções e móveis.",
-      ornamental: "árvore de grande porte e valor paisagístico.",
-      ecologico: "frutos servem de alimento para fauna.",
-    },
-    image: "images/sapucaia.jpg",
-  },
-  {
-    id: 11,
-    nomeVulgar: "Tamanqueira",
-    nomeCientifico: "Aegiphila sellowiana",
-    familia: "Lamiaceae",
-    dataColeta: "23/07/2024",
-    local: "Tucuruí – PA",
-    utilidades: {
-      madeira: "resistente, usada tradicionalmente para fazer tamancos.",
-      ornamental: "árvore útil em paisagismo urbano e rural.",
-      ecologico: "aplicável em recuperação de áreas degradadas.",
-    },
-    image: "images/tamanqueira.jpg",
-  },
-  {
-    id: 12,
-    nomeVulgar: "Sucupira",
-    nomeCientifico: "Pterodon emarginatus Vogel",
-    familia: "Fabaceae",
-    dataColeta: "23/07/2024",
-    local: "Tucuruí – PA",
-    utilidades: {
-      medicinal: "óleo da semente com propriedades anti-inflamatórias, usado para tratar artrite, reumatismo e dores.",
-      cosmetico: "presente em produtos naturais terapêuticos.",
-      madeira: "resistente, usada em construções e móveis.",
-      artesanal: "sementes aproveitadas em biojoias e enfeites.",
-    },
-    image: "images/sucupira.jpg",
-  },
-  {
-    id: 13,
-    nomeVulgar: "Maranhoto",
-    nomeCientifico: "Colubrina glandulosa",
-    familia: "Rhamnaceae",
-    dataColeta: "23/07/2024",
-    local: "Tucuruí – PA",
-    utilidades: {
-      medicinal: "flavonoides com ação anti-inflamatória e antioxidante.",
-      apicola: "atrativa para abelhas (produção de mel).",
-      ecologico: "usada em projetos de reflorestamento e recuperação ambiental.",
-      artesanal: "sementes com potencial decorativo.",
-    },
-    image: "images/maranhoto.jpg",
-  },
-  {
-    id: 14,
-    nomeVulgar: "Mirindiba-doce",
-    nomeCientifico: "Glycydendron amazonicum",
-    familia: "Euphorbiaceae",
-    dataColeta: "23/07/2024",
-    local: "Tucuruí – PA",
-    utilidades: {
-      madeira: "muito dura, usada em construções, móveis, lenha e carvão vegetal.",
-      medicinal: "folhas utilizadas na medicina tradicional como chá.",
-      ambiental: "boa para reflorestamento e atração de fauna.",
-      ornamental: "aplicável em arborização.",
-    },
-    image: "images/mirindiba.jpg",
-  },
-  {
-    id: 15,
-    nomeVulgar: "Açaí",
-    nomeCientifico: "Euterpe oleracea",
-    familia: "Arecaceae",
-    dataColeta: "24/08/2025",
-    local: "Jundiaí – PA",
-    utilidades: {
-      alimentacao: "polpa usada em sucos, “açaí na tigela”, doces, geleias e licores.",
-      cosmetico: "óleo da semente usado em cremes e shampoo.",
-      artesanal: "sementes (caroços) transformadas em biojoias e objetos decorativos.",
-      construcao: "estipe utilizado em construções rústicas, palha para cobertura.",
-      medicinal: "propriedades antioxidantes e anti-inflamatórias identificadas em estudos.",
-    },
-    image: "images/acai.jpg",
-  },
-]
-
 let filteredSeeds = [...seedsDatabase]
 
 // Inicializar a aplicação
@@ -278,12 +48,7 @@ function searchSeeds() {
     const matchesSearch =
       searchTerm === "" ||
       (seed.nomeVulgar && seed.nomeVulgar.toLowerCase().includes(searchTerm)) ||
-      (seed.nomeCientifico && seed.nomeCientifico.toLowerCase().includes(searchTerm)) ||
-      (seed.familia && seed.familia.toLowerCase().includes(searchTerm)) ||
-      (seed.categoria && seed.categoria.toLowerCase().includes(searchTerm)) ||
-      (seed.local && seed.local.toLowerCase().includes(searchTerm)) ||
-      (seed.utilidades &&
-        Object.values(seed.utilidades).some((util) => util && util.toLowerCase().includes(searchTerm)))
+      (seed.nomeCientifico && seed.nomeCientifico.toLowerCase().includes(searchTerm))
 
     const matchesFamily = familyFilter === "" || seed.familia === familyFilter
 
@@ -394,6 +159,17 @@ function openModal(seedId) {
         ritual: "🕯️",
         artesanal: "🎨",
         artesanato: "🎨",
+        adstringente: "🍃",
+        cicatrizacao: "❤️‍🩹",
+        construcao: "🧱",
+        repelente: "🦟",
+        apicola: "🐝",
+        resistencia: "💪",
+        fitoterapico: "🩹",
+        antioxidante: "🥦",
+
+
+
       }
       return emojiMap[normalizedKey] || "🌱"
     }
@@ -525,5 +301,16 @@ function displaySeeds(seeds) {
     `,
     )
     .join("")
+  // Funções auxiliares
+  function escapeHtml(text) {
+    if (!text) return "";
+    const div = document.createElement("div");
+    div.textContent = text;
+    return div.innerHTML;
+  }
+
+  function sortSeedsAlphabetically(seeds) {
+    return seeds.slice().sort((a, b) => a.nomeVulgar.localeCompare(b.nomeVulgar, "pt-BR", { sensitivity: "base" }));
+  }
 }
 
